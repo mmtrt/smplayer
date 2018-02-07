@@ -1,10 +1,10 @@
 <h1 align="center">
   <img src="https://avatars1.githubusercontent.com/u/29598503?v=3&s=256" alt="Project">
   <br />
-  [Project]
+  smplayer
 </h1>
 
-<p align="center"><b>This is the snap for [Project]</b>, <i>"Single-line elevator pitch for your amazing snap"</i>. It works on Ubuntu, Fedora, Debian, and other major Linux
+<p align="center"><b>This is the snap for smplayer</b>, <i>"Free Media Player with built-in codecs"</i>. It works on Ubuntu, Fedora, Debian, and other major Linux
 distributions.</p>
 
 <!-- Uncomment and modify this when you are provided a build status badge
@@ -16,12 +16,13 @@ distributions.</p>
 ## Install
 
     sudo snap install my-snap-name
+    sudo snap connect smplayer:mount-observe core:mount-observe
+    sudo snap connect smplayer:network-manager core:network-manager
+    sudo snap connect smplayer:network-control core:network-control
 
 ([Don't have snapd installed?](https://snapcraft.io/docs/core/install))
 
-<!-- Uncomment and modify this when you have a screenshot
-![my-snap-name](screenshot.png?raw=true "my-snap-name")
--->
+![smplayer](screenshot.png?raw=true "smplayer")
 
 <p align="center">Published for <img src="http://anything.codes/slack-emoji-for-techies/emoji/tux.png" align="top" width="24" /> with :gift_heart: by Snapcrafters</p>
 
@@ -39,11 +40,11 @@ upstream so [Project] can authoritatively publish future releases.
   - [ ] Update logos and references to `[Project]` and `[my-snap-name]`
   - [ ] Create a snap that runs in `devmode`
   - [ ] Register the snap in the store, **using the preferred upstream name**
-  - [ ] Add a screenshot to this `README.md`
+  - [x] Add a screenshot to this `README.md`
   - [ ] Publish the `devmode` snap in the Snap store edge channel
   - [ ] Add install instructions to this `README.md`
   - [ ] Update snap store metadata, icons and screenshots
-  - [ ] Convert the snap to `strict` confinement, or `classic` confinement if it qualifies
+  - [x] Convert the snap to `strict` confinement, or `classic` confinement if it qualifies
   - [ ] Publish the confined snap in the Snap store beta channel
   - [ ] Update the install instructions in this `README.md`
   - [ ] Post a call for testing on the [Snapcraft Forum](https://forum.snapcraft.io) - [link]()
